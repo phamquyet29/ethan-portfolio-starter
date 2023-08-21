@@ -48,12 +48,11 @@ const WorkSlider = () => {
       className="h-[280px] sm:h-[480px]"
     >
       {workSlides.slides.map((slide, index) => {
-        <div key={index}>{slide}</div>
+        <div key={index}>{slide}</div>;
         return (
           <SwiperSlide key={index}>
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
               {slide.images.map((image, index) => {
-                <div key={index}>{image}</div>
                 return (
                   <div
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group"
